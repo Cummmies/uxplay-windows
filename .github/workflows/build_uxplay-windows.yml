@@ -127,7 +127,7 @@ jobs:
           python -m venv ./venv
           .\venv\Scripts\Activate.ps1
           python -m pip install --upgrade pip
-          pip install pyinstaller pystray
+          pip install pyinstaller pystray winsdk
 
           pyinstaller --noconsole --onedir --clean --name uxplay-windows --icon=icon.ico tray.py
 
